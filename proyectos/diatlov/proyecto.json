@@ -1,0 +1,26 @@
+{
+ "voice": "voz.mp3",
+ "out": "../../short-diatlov.mp4",
+ "music": "../../audio/musica-detective.mp3",
+ "music_volume": 0.5,
+ "whoosh": "../../audio/whoosh.mp3",
+ "keywords": ["nueve","descalzos","ninguno","1959","muerta","dentro","calcetines","cedro","lengua","radiactividad","irresistible","yeti","ovnis","giro","avalancha","nieve","frío","algo","enigmas"],
+ "lines": [
+  {"text": "Nueve excursionistas expertos huyeron de su tienda en plena noche, a -30 grados... descalzos.", "spoken": "Nueve excursionistas expertos huyeron de su tienda en plena noche, a treinta grados bajo cero... descalzos.", "images": ["sc/01.png"]},
+  {"text": "Ninguno sobrevivió.", "images": ["sc/02.png"]},
+  {"text": "Febrero de 1959, montes Urales. El grupo de Ígor Diátlov acampa en la ladera de una montaña que los mansi llaman Jolat Siajl: la montaña muerta.", "spoken": "Febrero de mil novecientos cincuenta y nueve, montes Urales. El grupo de Ígor Diátlov acampa en la ladera de una montaña que los mansi llaman Jolat Siajl: la montaña muerta.", "images": ["sc/03.png","sc/04.png"]},
+  {"text": "Cuando los rescatistas encuentran la tienda, está rajada desde dentro.", "images": ["sc/05.png"]},
+  {"text": "Las huellas bajan hacia el bosque. Algunos iban en calcetines.", "images": ["sc/06.png"]},
+  {"text": "Junto a un cedro, dos cuerpos y los restos de una fogata.", "images": ["sc/07.png"]},
+  {"text": "Meses después, en un barranco, aparecen los últimos cuatro: cráneos fracturados, costillas rotas... y a una joven le faltaba la lengua.", "images": ["sc/08.png","sc/02.png"]},
+  {"text": "Algunas de sus ropas tenían rastros de radiactividad.", "images": ["sc/09.png"]},
+  {"text": "La investigación soviética lo cerró con una frase escalofriante: una fuerza natural irresistible.", "images": ["sc/10.png"]},
+  {"text": "Las teorías explotaron: el yeti, pruebas militares secretas, ovnis, infrasonido.", "images": ["sc/11.png","sc/12.png","sc/13.png","sc/14.png"]},
+  {"text": "Pero aquí viene el giro.", "images": ["sc/15.png"]},
+  {"text": "En 2020, la fiscalía rusa concluyó que fue una avalancha.", "spoken": "En dos mil veinte, la fiscalía rusa concluyó que fue una avalancha.", "images": ["sc/16.png"]},
+  {"text": "Y en 2021, unos científicos suizos demostraron con simulaciones que una pequeña placa de nieve pudo caer sobre la tienda y causar esas heridas.", "spoken": "Y en dos mil veintiuno, unos científicos suizos demostraron con simulaciones que una pequeña placa de nieve pudo caer sobre la tienda y causar esas heridas.", "images": ["sc/18.png","sc/17.png"]},
+  {"text": "Huir ladera abajo era lo lógico... pero la noche y el frío hicieron el resto.", "images": ["sc/19.png","sc/20.png"]},
+  {"text": "Aun así, muchos no se lo creen. ¿Avalancha... o algo más?", "images": ["sc/21.png"]},
+  {"text": "Sígueme para más enigmas.", "images": ["sc/22.png"]}
+ ]
+}
