@@ -1,0 +1,135 @@
+{
+ "voice": "voz.mp3",
+ "out": "../../short-mary-celeste.mp4",
+ "music": "../../audio/musica-detective.mp3",
+ "music_volume": 0.5,
+ "whoosh": "../../audio/whoosh.mp3",
+ "keywords": [
+  "deriva",
+  "seis",
+  "ninguna",
+  "celeste",
+  "1872",
+  "alcohol",
+  "diez",
+  "desaparecido",
+  "nueve",
+  "nunca",
+  "piratas",
+  "monstruo",
+  "doyle",
+  "real",
+  "giro",
+  "vacíos",
+  "explosión",
+  "cuerda",
+  "quemaduras",
+  "solo",
+  "enigmas"
+ ],
+ "lines": [
+  {
+   "text": "Un barco aparece a la deriva en medio del Atlántico. Las velas puestas, comida para seis meses... y ni una sola persona a bordo.",
+   "images": [
+    "sc/A.png"
+   ]
+  },
+  {
+   "text": "Es el Mary Celeste. Diciembre de 1872.",
+   "spoken": "Es el Mary Celeste. Diciembre de mil ochocientos setenta y dos.",
+   "images": [
+    "sc/D.png"
+   ]
+  },
+  {
+   "text": "Había zarpado de Nueva York rumbo a Génova con 1700 barriles de alcohol.",
+   "spoken": "Había zarpado de Nueva York rumbo a Génova con mil setecientos barriles de alcohol.",
+   "images": [
+    "sc/B.png"
+   ]
+  },
+  {
+   "text": "A bordo, diez personas: el capitán Benjamin Briggs, su esposa, su hija de dos años y siete tripulantes.",
+   "images": [
+    "sc/C.png"
+   ]
+  },
+  {
+   "text": "Los marineros de otro barco, el Dei Gratia, lo encuentran entre las Azores y Portugal.",
+   "images": [
+    "sc/A.png"
+   ]
+  },
+  {
+   "text": "Las pertenencias seguían ahí. Pero el bote salvavidas había desaparecido.",
+   "images": [
+    "sc/E.png",
+    "sc/F.png"
+   ]
+  },
+  {
+   "text": "La última anotación del diario era de nueve días antes. Nada fuera de lo normal.",
+   "images": [
+    "sc/G.png"
+   ]
+  },
+  {
+   "text": "Nunca más se supo de ellos.",
+   "images": [
+    "sc/n1-bote-niebla.png"
+   ]
+  },
+  {
+   "text": "Las teorías se dispararon: piratas, un monstruo marino, un motín, un fraude al seguro.",
+   "images": [
+    "sc/H.png",
+    "sc/I.png"
+   ]
+  },
+  {
+   "text": "Y un joven escritor llamado Arthur Conan Doyle publicó un cuento con té todavía caliente sobre la mesa... que mucha gente creyó real.",
+   "images": [
+    "sc/J.png"
+   ]
+  },
+  {
+   "text": "Pero aquí viene el giro.",
+   "images": [
+    "sc/n2-giro.png"
+   ]
+  },
+  {
+   "text": "Nueve barriles de alcohol estaban vacíos.",
+   "images": [
+    "sc/K.png"
+   ]
+  },
+  {
+   "text": "Si los vapores se escaparon, el capitán pudo temer una explosión y ordenar abandonar el barco... para esperar en el bote, atado con una cuerda.",
+   "images": [
+    "sc/F.png",
+    "sc/L.png"
+   ]
+  },
+  {
+   "text": "En 2006, un químico de Londres recreó una explosión de vapores de alcohol: una llamarada aparatosa que no deja quemaduras.",
+   "spoken": "En dos mil seis, un químico de Londres recreó una explosión de vapores de alcohol: una llamarada aparatosa que no deja quemaduras.",
+   "images": [
+    "sc/M.png"
+   ]
+  },
+  {
+   "text": "Si esa cuerda se rompió... el barco siguió navegando solo.",
+   "images": [
+    "sc/L.png"
+   ]
+  },
+  {
+   "text": "¿Accidente... o algo más? Sígueme para más enigmas.",
+   "images": [
+    "sc/n3-pensativo.png",
+    "sc/n4-despedida.png"
+   ]
+  }
+ ]
+}
