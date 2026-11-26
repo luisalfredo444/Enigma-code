@@ -9,6 +9,9 @@ El JSON del proyecto (rutas relativas al propio JSON):
   "voice": "voz.mp3",                 # narración (mp3/wav)
   "out": "short.mp4",                 # salida 1080x1920
   "keywords": ["vuelo", "nunca"],     # palabras resaltadas en amarillo (opcional)
+  "music": "../../audio/musica-detective.mp3",  # música de fondo en bucle (opcional)
+  "music_volume": 0.5,                # 0-1, volumen de la música (opcional)
+  "whoosh": "../../audio/whoosh.mp3", # efecto en cada cambio de escena (opcional)
   "lines": [                          # una entrada por frase del guion, en orden
     {"text": "En 1945...",            # lo que se muestra en subtítulos
      "spoken": "En mil novecientos...",  # (opcional) cómo se pronuncia, para medir duración
@@ -150,8 +153,23 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             f.write(f"Dialogue: 1,{ts(a)},{ts(b)},Word,,0,0,0,,{{{pos}{pop}\\1c{col}}}{txt}\n")
 
 
+# Movimientos de cámara (expresiones de zoompan; P = progreso 0..1 del plano).
+# La imagen se escala a 2x, así que hay margen para paneos sin bordes negros.
+MOVES = {
+    "zoom_in":  ("1.04+0.16*P", "(iw-iw/zoom)/2", "(ih-ih/zoom)/2"),
+    "zoom_out": ("1.20-0.16*P", "(iw-iw/zoom)/2", "(ih-ih/zoom)/2"),
+    "pan_der":  ("1.22", "(iw-iw/zoom)*P", "(ih-ih/zoom)/2"),
+    "pan_izq":  ("1.22", "(iw-iw/zoom)*(1-P)", "(ih-ih/zoom)/2"),
+    "pan_arr":  ("1.18", "(iw-iw/zoom)/2", "(ih-ih/zoom)*(1-P)"),
+    "pan_aba":  ("1.18", "(iw-iw/zoom)/2", "(ih-ih/zoom)*P"),
+}
+ORDER = ["zoom_in", "pan_der", "zoom_out", "pan_arr", "zoom_in", "pan_izq", "zoom_out", "pan_aba"]
+
+
 def scene_clips(lines, line_times, base, tmp, total):
-    """Reparte el tiempo de cada frase entre sus imágenes; cortes en los límites."""
+    """Reparte el tiempo de cada frase entre sus imágenes; cortes en los límites.
+    Cada plano lleva un movimiento distinto, golpe de zoom al entrar y balanceo suave.
+    Devuelve (clips, instantes de corte)."""
     shots = []
     for i, (line, (a, b)) in enumerate(zip(lines, line_times)):
         end = line_times[i + 1][0] if i + 1 < len(lines) else total
@@ -160,18 +178,54 @@ def scene_clips(lines, line_times, base, tmp, total):
         for j, img in enumerate(imgs):
             shots.append([os.path.join(base, img), a + j * step, a + (j + 1) * step])
     shots[0][1] = 0.0
-    files = []
+    shots[-1][2] = total
+    files, cuts = [], []
     for n, (img, a, b) in enumerate(shots):
-        fr = max(1, round((b - a) * FPS))
-        zin = n % 2 == 0
-        z = f"1+0.10*on/{fr}" if zin else f"1.10-0.10*on/{fr}"
+        fr = max(1, round(b * FPS) - round(a * FPS))  # sin deriva acumulada
+        z, x, y = MOVES[ORDER[n % len(ORDER)]]
+        P = f"(on/{fr})"
+        punch = "(1+0.10*max(0,1-on/6))"           # golpe de zoom en los primeros 6 frames
+        wob_x, wob_y = "10*sin(on/11)", "8*sin(on/7+1)"  # cámara en mano suave
+        z = f"({z.replace('P', P)})*{punch}"
+        x = f"max(0,min(iw-iw/zoom,{x.replace('P', P)}+{wob_x}))"
+        y = f"max(0,min(ih-ih/zoom,{y.replace('P', P)}+{wob_y}))"
         out = os.path.join(tmp, f"s{n:03d}.mp4")
-        vf = (f"scale={W*2}:-2,crop={W*2}:{H*2},zoompan=z='{z}':x='iw/2-(iw/zoom/2)':"
-              f"y='ih/2-(ih/zoom/2)':d={fr}:s={W}x{H}:fps={FPS},format=yuv420p")
+        vf = (f"scale={W*2}:-2,crop={W*2}:{H*2},zoompan=z='{z}':x='{x}':y='{y}':"
+              f"d={fr}:s={W}x{H}:fps={FPS},format=yuv420p")
         run(["ffmpeg", "-loglevel", "error", "-y", "-i", img, "-vf", vf, "-frames:v", str(fr),
              "-c:v", "libx264", "-preset", "medium", "-crf", "18", out])
         files.append(out)
-    return files
+        if n:
+            cuts.append(round(a * FPS) / FPS)
+    return files, cuts
+
+
+def mix_audio(voice, total, cuts, music, whoosh, music_vol, out):
+    """Voz al frente; música en bucle que se agacha cuando hay voz; whoosh en cada corte."""
+    inputs = ["-i", voice]
+    fc = [f"[0]loudnorm=I=-14:TP=-1.5,aresample=44100,apad=whole_dur={total},asplit=2[v][key]"]
+    mixes = ["[v]"]
+    k = 1
+    if music:
+        inputs += ["-stream_loop", "-1", "-i", music]
+        fc.append(f"[{k}]aresample=44100,atrim=0:{total},loudnorm=I=-16,volume={music_vol},"
+                  f"afade=t=in:d=0.5,afade=t=out:st={total-2.5}:d=2.5[m0]")
+        fc.append("[m0][key]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[m]")
+        mixes.append("[m]"); k += 1
+    else:
+        fc.append("[key]anullsink")
+    if whoosh and cuts:
+        inputs += ["-i", whoosh]
+        n = len(cuts)
+        fc.append(f"[{k}]aresample=44100,volume=0.35,asplit={n}" + "".join(f"[w{i}]" for i in range(n)))
+        for i, t in enumerate(cuts):
+            d = max(0, int((t - 0.25) * 1000))
+            fc.append(f"[w{i}]adelay={d}|{d}[wd{i}]")
+        fc.append("".join(f"[wd{i}]" for i in range(n)) + f"amix={n}:normalize=0[w]")
+        mixes.append("[w]")
+    fc.append("".join(mixes) + f"amix={len(mixes)}:normalize=0:duration=first,alimiter=limit=0.95[a]")
+    run(["ffmpeg", "-loglevel", "error", "-y", *inputs, "-filter_complex", ";".join(fc),
+         "-map", "[a]", "-t", str(total), "-ac", "2", out])
 
 
 def main(cfg_path):
@@ -190,18 +244,14 @@ def main(cfg_path):
     with tempfile.TemporaryDirectory() as tmp:
         ass = os.path.join(tmp, "subs.ass")
         write_ass(words, cfg.get("keywords", []), ass)
-        clips = scene_clips(lines, line_times, base, tmp, total)
+        clips, cuts = scene_clips(lines, line_times, base, tmp, total)
         lst = os.path.join(tmp, "list.txt")
         open(lst, "w").write("".join(f"file '{c}'\n" for c in clips))
         mudo = os.path.join(tmp, "mudo.mp4")
         run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", mudo])
         mix = os.path.join(tmp, "mix.wav")
-        run(["ffmpeg", "-loglevel", "error", "-y", "-i", voice,
-             "-f", "lavfi", "-i", f"anoisesrc=color=brown:amplitude=0.5:d={total}:r=44100",
-             "-filter_complex",
-             f"[0]loudnorm=I=-14:TP=-1.5,aresample=44100,apad=whole_dur={total}[v];"
-             f"[1]lowpass=f=250,volume=0.06,afade=t=out:st={total-2}:d=2[bg];"
-             "[v][bg]amix=2:normalize=0:duration=first", "-t", str(total), mix])
+        opt = lambda k: os.path.join(base, cfg[k]) if cfg.get(k) else None
+        mix_audio(voice, total, cuts, opt("music"), opt("whoosh"), cfg.get("music_volume", 0.5), mix)
         run(["ffmpeg", "-loglevel", "error", "-y", "-i", mudo, "-i", mix,
              "-vf", f"ass={ass}:fontsdir={FONT_DIR}", "-map", "0:v", "-map", "1:a",
              "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",

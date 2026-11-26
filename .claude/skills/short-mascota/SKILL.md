@@ -17,6 +17,12 @@ donde siempre aparece la mascota, voz en off grave y una sola palabra en pantall
 - Voz: ElevenLabs, voz "Damián" (`BPwS5yO6aXvwg8auqNwS`), modelo `eleven_v4`, 1 toma.
 - Montaje: `python3 tools/mascota_short.py proyectos/<tema>/proyecto.json`
 - Ejemplo completo: `proyectos/bermudas/`.
+- Música y whoosh (Epidemic Sound vía Higgsfield, no se suben al repo; van en `audio/`):
+  - `audio/musica-detective.mp3` ← `download_sound_effect` de
+    `epidemic_sound:35846e6d-e5bf-4548-9219-bb2db60de71f` ("Funny Orchestra, Curious, Mysterious", bucle 24 s).
+  - `audio/whoosh.mp3` ← `epidemic_sound:ef3da4c3-b32a-4d99-a58a-8c167e50c4f9`.
+  - Para otro ambiente usa `search_sound_effects` (p. ej. "dark suspense loop") y descarga
+    solo lo que uses (cada descarga consume cupo). El entorno debe permitir `pdn.epidemicsound.com`.
 
 ## Pasos
 1. **Guion** (150–190 palabras ≈ 70 s), en español, con hechos verificables:
@@ -43,10 +49,12 @@ donde siempre aparece la mascota, voz en off grave y una sola palabra en pantall
    la llamada si falla por "busy": espera y reintenta en otro turno.
 4. **Descarga** voz e imágenes a `proyectos/<tema>/` (`sc/01.png`…). El entorno debe
    permitir `elevenlabsusercontent.com` y `d8j0ntlcm91z4.cloudfront.net`.
-5. **proyecto.json**: `voice`, `out`, `keywords` (palabras en amarillo, en minúscula sin
+5. **proyecto.json**: `voice`, `out`, `music`, `music_volume` (0.5 por defecto), `whoosh`, `keywords` (palabras en amarillo, en minúscula sin
    puntuación) y `lines` = cada frase del guion en orden, con `text`, `spoken` opcional e
    `images` (las escenas que la cubren; varias se reparten su tiempo).
-6. **Monta** con el script. Comprueba el alineado (frases ↔ pausas) imprimiendo
+6. **Monta** con el script (cada plano alterna zoom de entrada/salida y paneos, con golpe
+   de zoom al cortar y balanceo suave; la música se agacha sola bajo la voz y suena un
+   whoosh en cada corte). Comprueba el alineado (frases ↔ pausas) imprimiendo
    `align_lines` si dudas, y revisa fotogramas antes de entregar.
 7. **Publicar** (solo si lo piden): Blotato → `blotato_create_presigned_upload_url`, PUT del
    mp4 (`database.blotato.io` permitido), `blotato_create_post` en la cuenta de YouTube
