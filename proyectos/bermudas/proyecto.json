@@ -1,0 +1,23 @@
+{
+ "voice": "voz.mp3",
+ "out": "../../short-bermudas.mp4",
+ "keywords": ["triángulo","desaparecen","rastro","1945","19","brújulas","nunca","tampoco","cyclops","300","atlántida","portales","giro","tráfico","tormentas","errores","misterio","creyendo","enigmas"],
+ "lines": [
+  {"text": "En el Atlántico hay un triángulo donde, según la leyenda, barcos y aviones desaparecen sin dejar rastro.", "images": ["sc/01.png"]},
+  {"text": "Sus vértices: Miami, Bermudas y Puerto Rico.", "images": ["sc/02.png"]},
+  {"text": "5 de diciembre de 1945.", "spoken": "Cinco de diciembre de mil novecientos cuarenta y cinco.", "images": ["sc/03.png"]},
+  {"text": "Cinco bombarderos de la Marina de Estados Unidos despegan de Florida en un vuelo de entrenamiento: el Vuelo 19.", "spoken": "Cinco bombarderos de la Marina de Estados Unidos despegan de Florida en un vuelo de entrenamiento: el Vuelo diecinueve.", "images": ["sc/03.png"]},
+  {"text": "En pleno vuelo, el líder reporta que sus brújulas fallan... y que no sabe dónde está.", "images": ["sc/04.png"]},
+  {"text": "Nunca regresaron.", "images": ["sc/05.png"]},
+  {"text": "Y el hidroavión que salió a buscarlos... tampoco volvió.", "images": ["sc/06.png"]},
+  {"text": "Años antes, en 1918, el buque USS Cyclops se esfumó con más de 300 personas a bordo.", "spoken": "Años antes, en mil novecientos dieciocho, el buque USS Cyclops se esfumó con más de trescientas personas a bordo.", "images": ["sc/07.png","sc/08.png"]},
+  {"text": "Ni un mensaje de auxilio.", "images": ["sc/09.png"]},
+  {"text": "Ni un solo resto.", "images": ["sc/08.png"]},
+  {"text": "Las teorías se dispararon: la Atlántida, portales a otra dimensión, burbujas de gas que hunden barcos, olas gigantes.", "images": ["sc/10.png","sc/11.png","sc/12.png","sc/13.png"]},
+  {"text": "Pero aquí viene el giro.", "images": ["sc/14.png"]},
+  {"text": "Las aseguradoras y la Guardia Costera dicen que en el triángulo no desaparecen más barcos que en cualquier otra zona con tanto tráfico.", "images": ["sc/15.png","sc/16.png","sc/17.png"]},
+  {"text": "Tormentas repentinas, la corriente del Golfo y errores humanos explican la mayoría de los casos.", "images": ["sc/18.png","sc/19.png","sc/20.png"]},
+  {"text": "Entonces... ¿el verdadero misterio está en el mar... o en por qué seguimos creyendo en él?", "images": ["sc/21.png"]},
+  {"text": "Sígueme para más enigmas.", "images": ["sc/22.png"]}
+ ]
+}
