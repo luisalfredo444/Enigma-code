@@ -1,0 +1,130 @@
+{
+ "voice": "voz.mp3",
+ "music": "../../audio/musica-detective.mp3",
+ "music_volume": 0.5,
+ "whoosh": "../../audio/whoosh.mp3",
+ "out": "../../short-piedras.mp4",
+ "keywords": [
+  "muerte",
+  "solas",
+  "rastros",
+  "cientos",
+  "cien",
+  "zigzaguean",
+  "paralelo",
+  "décadas",
+  "nadie",
+  "racetrack",
+  "carreras",
+  "magnéticos",
+  "bromas",
+  "extraterrestres",
+  "giro",
+  "gps",
+  "2013",
+  "moverse",
+  "charco",
+  "congela",
+  "hielo",
+  "vidrio",
+  "brisa",
+  "despacio",
+  "paciencia",
+  "enigmas"
+ ],
+ "lines": [
+  {
+   "text": "En el Valle de la Muerte, en California, hay piedras que se mueven solas.",
+   "images": [
+    "clips/01.mp4"
+   ]
+  },
+  {
+   "text": "Dejan rastros larguísimos en el suelo seco: algunos de cientos de metros.",
+   "images": [
+    "clips/02.mp4"
+   ]
+  },
+  {
+   "text": "Las hay pequeñas... y otras que pesan más de cien kilos.",
+   "images": [
+    "clips/03.mp4"
+   ]
+  },
+  {
+   "text": "Los rastros giran, zigzaguean y hasta van en paralelo, como si las piedras se pusieran de acuerdo.",
+   "images": [
+    "clips/04.mp4"
+   ]
+  },
+  {
+   "text": "Durante décadas, científicos acamparon allí para verlas moverse. Nadie lo logró.",
+   "images": [
+    "clips/05.mp4"
+   ]
+  },
+  {
+   "text": "El lugar se llama Racetrack Playa: la pista de carreras.",
+   "images": [
+    "clips/06.mp4"
+   ]
+  },
+  {
+   "text": "Las teorías: campos magnéticos, bromas, vientos huracanados, extraterrestres.",
+   "images": [
+    "clips/07.mp4",
+    "clips/08.mp4"
+   ]
+  },
+  {
+   "text": "Pero aquí viene el giro.",
+   "images": [
+    "../comun/clips/giro.mp4"
+   ]
+  },
+  {
+   "text": "Dos primos científicos colocaron piedras con GPS y cámaras que tomaban fotos sin parar.",
+   "images": [
+    "clips/10.mp4"
+   ]
+  },
+  {
+   "text": "Y en diciembre de 2013, por fin, las vieron moverse.",
+   "images": [
+    "clips/11.mp4"
+   ],
+   "spoken": "Y en diciembre de dos mil trece, por fin, las vieron moverse."
+  },
+  {
+   "text": "La clave: tras una lluvia rara, se forma un charco poco profundo que se congela por la noche.",
+   "images": [
+    "clips/12.mp4"
+   ]
+  },
+  {
+   "text": "Al salir el sol, el hielo se rompe en placas finas como un vidrio... y una brisa suave las empuja contra las piedras.",
+   "images": [
+    "clips/13.mp4"
+   ]
+  },
+  {
+   "text": "Las piedras avanzan despacio, sin que nadie lo note.",
+   "images": [
+    "clips/14.mp4"
+   ]
+  },
+  {
+   "text": "Un misterio de décadas, resuelto por hielo... y paciencia.",
+   "images": [
+    "clips/15.mp4"
+   ]
+  },
+  {
+   "text": "¿Qué otro misterio crees que tiene una explicación así? Sígueme para más enigmas.",
+   "images": [
+    "clips/16.mp4",
+    "../comun/clips/despedida.mp4"
+   ]
+  }
+ ]
+}

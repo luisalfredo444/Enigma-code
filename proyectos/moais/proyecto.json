@@ -1,0 +1,128 @@
+{
+ "voice": "voz.mp3",
+ "music": "../../audio/musica-detective.mp3",
+ "music_volume": 0.5,
+ "whoosh": "../../audio/whoosh.mp3",
+ "out": "../../short-moais.mp4",
+ "keywords": [
+  "mil",
+  "gigantes",
+  "rapa",
+  "pascua",
+  "diez",
+  "ochenta",
+  "cuerpo",
+  "enterrado",
+  "volcán",
+  "ruedas",
+  "caminaron",
+  "extraterrestres",
+  "magia",
+  "giro",
+  "2012",
+  "cuerdas",
+  "dieciocho",
+  "caminaba",
+  "caminos",
+  "leyenda",
+  "verdad",
+  "ingenio",
+  "enigmas"
+ ],
+ "lines": [
+  {
+   "text": "En una de las islas más aisladas del planeta hay casi mil gigantes de piedra... y durante siglos nadie supo cómo llegaron hasta ahí.",
+   "images": [
+    "clips/01.mp4"
+   ]
+  },
+  {
+   "text": "Son los moáis de Rapa Nui, la Isla de Pascua, a más de 3500 kilómetros de la costa de Chile.",
+   "images": [
+    "clips/02.mp4"
+   ],
+   "spoken": "Son los moáis de Rapa Nui, la Isla de Pascua, a más de tres mil quinientos kilómetros de la costa de Chile."
+  },
+  {
+   "text": "Algunos miden diez metros y pesan más de ochenta toneladas.",
+   "images": [
+    "clips/03.mp4"
+   ]
+  },
+  {
+   "text": "Y esas famosas cabezas... en realidad tienen cuerpo: está enterrado bajo tierra.",
+   "images": [
+    "clips/04.mp4"
+   ]
+  },
+  {
+   "text": "Fueron tallados en la cantera de un volcán y llevados a kilómetros de distancia.",
+   "images": [
+    "clips/05.mp4"
+   ]
+  },
+  {
+   "text": "Sin ruedas. Sin caballos. Sin grúas.",
+   "images": [
+    "clips/06.mp4"
+   ]
+  },
+  {
+   "text": "Los habitantes de la isla tenían una respuesta: los moáis caminaron.",
+   "images": [
+    "clips/07.mp4"
+   ]
+  },
+  {
+   "text": "Las teorías: extraterrestres, rodillos de troncos que acabaron con los bosques, magia.",
+   "images": [
+    "clips/08.mp4",
+    "clips/09.mp4"
+   ]
+  },
+  {
+   "text": "Pero aquí viene el giro.",
+   "images": [
+    "../comun/clips/giro.mp4"
+   ]
+  },
+  {
+   "text": "En 2012, dos arqueólogos construyeron una réplica de más de cuatro toneladas y la ataron con tres cuerdas.",
+   "images": [
+    "clips/11.mp4"
+   ],
+   "spoken": "En dos mil doce, dos arqueólogos construyeron una réplica de más de cuatro toneladas y la ataron con tres cuerdas."
+  },
+  {
+   "text": "Dieciocho personas tiraron alternadamente de cada lado... y la estatua avanzó de pie, balanceándose, paso a paso.",
+   "images": [
+    "clips/12.mp4"
+   ]
+  },
+  {
+   "text": "¡Caminaba!",
+   "images": [
+    "clips/13.mp4"
+   ]
+  },
+  {
+   "text": "Los antiguos caminos de la isla y la forma de los moáis caídos encajan con esa idea.",
+   "images": [
+    "clips/14.mp4"
+   ]
+  },
+  {
+   "text": "Quizá la leyenda decía la verdad desde el principio.",
+   "images": [
+    "clips/15.mp4"
+   ]
+  },
+  {
+   "text": "¿Ingenio... o algo más? Sígueme para más enigmas.",
+   "images": [
+    "clips/16.mp4",
+    "../comun/clips/despedida.mp4"
+   ]
+  }
+ ]
+}

@@ -182,6 +182,20 @@ def scene_clips(lines, line_times, base, tmp, total):
     files, cuts = [], []
     for n, (img, a, b) in enumerate(shots):
         fr = max(1, round(b * FPS) - round(a * FPS))  # sin deriva acumulada
+        out = os.path.join(tmp, f"s{n:03d}.mp4")
+        if img.lower().endswith((".mp4", ".mov", ".webm")):
+            # Clip animado: ajusta a 1080x1920; si el plano dura más que el clip,
+            # lo ralentiza hasta 1.5x y luego congela el último fotograma.
+            sd, cd = fr / FPS, duration(img)
+            slow = min(max(sd / cd, 1.0), 1.5)
+            vf = (f"setpts={slow:.4f}*PTS,fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,"
+                  f"crop={W}:{H},tpad=stop_mode=clone:stop_duration={sd:.2f},format=yuv420p")
+            run(["ffmpeg", "-loglevel", "error", "-y", "-i", img, "-an", "-vf", vf, "-frames:v", str(fr),
+                 "-c:v", "libx264", "-preset", "medium", "-crf", "18", out])
+            files.append(out)
+            if n:
+                cuts.append(round(a * FPS) / FPS)
+            continue
         z, x, y = MOVES[ORDER[n % len(ORDER)]]
         P = f"(on/{fr})"
         punch = "(1+0.10*max(0,1-on/6))"           # golpe de zoom en los primeros 6 frames

@@ -1,0 +1,127 @@
+{
+ "voice": "voz.mp3",
+ "music": "../../audio/musica-detective.mp3",
+ "music_volume": 0.5,
+ "whoosh": "../../audio/whoosh.mp3",
+ "out": "../../short-anticitera.mp4",
+ "keywords": [
+  "1901",
+  "bronce",
+  "asombroso",
+  "griego",
+  "anticitera",
+  "engranajes",
+  "treinta",
+  "precisión",
+  "astronómica",
+  "eclipses",
+  "olímpicos",
+  "medievales",
+  "mil",
+  "tiempo",
+  "extraterrestres",
+  "atlántida",
+  "giro",
+  "2005",
+  "letras",
+  "manual",
+  "2021",
+  "planetas",
+  "griegos",
+  "perdió",
+  "olvidado",
+  "enigmas"
+ ],
+ "lines": [
+  {
+   "text": "En 1901, unos buceadores sacaron del fondo del mar un trozo de bronce corroído... que acabó siendo el objeto más asombroso de la Antigüedad.",
+   "images": [
+    "clips/01.mp4"
+   ],
+   "spoken": "En mil novecientos uno, unos buceadores sacaron del fondo del mar un trozo de bronce corroído... que acabó siendo el objeto más asombroso de la Antigüedad."
+  },
+  {
+   "text": "Estaba en un naufragio griego de hace más de 2000 años, junto a la isla de Anticitera.",
+   "images": [
+    "clips/02.mp4"
+   ],
+   "spoken": "Estaba en un naufragio griego de hace más de dos mil años, junto a la isla de Anticitera."
+  },
+  {
+   "text": "Al principio parecía una roca verde. Pero al partirse... aparecieron engranajes.",
+   "images": [
+    "clips/03.mp4"
+   ]
+  },
+  {
+   "text": "Al menos treinta ruedas dentadas de bronce, encajadas con una precisión de relojero.",
+   "images": [
+    "clips/04.mp4"
+   ]
+  },
+  {
+   "text": "Era una calculadora astronómica: con una manivela, mostraba la posición del Sol y la Luna, las fases lunares... y predecía eclipses.",
+   "images": [
+    "clips/05.mp4",
+    "clips/04.mp4"
+   ]
+  },
+  {
+   "text": "Hasta marcaba la fecha de los Juegos Olímpicos.",
+   "images": [
+    "clips/06.mp4"
+   ]
+  },
+  {
+   "text": "Nada tan complejo vuelve a aparecer en la historia hasta los relojes astronómicos medievales, más de mil años después.",
+   "images": [
+    "clips/07.mp4"
+   ]
+  },
+  {
+   "text": "Las teorías: viajeros en el tiempo, extraterrestres, tecnología de la Atlántida.",
+   "images": [
+    "clips/08.mp4"
+   ]
+  },
+  {
+   "text": "Pero aquí viene el giro.",
+   "images": [
+    "../comun/clips/giro.mp4"
+   ]
+  },
+  {
+   "text": "En 2005, escáneres de rayos X revelaron miles de letras escondidas dentro del mecanismo.",
+   "images": [
+    "clips/10.mp4"
+   ],
+   "spoken": "En dos mil cinco, escáneres de rayos X revelaron miles de letras escondidas dentro del mecanismo."
+  },
+  {
+   "text": "Era el manual de instrucciones, escrito en griego.",
+   "images": [
+    "clips/11.mp4"
+   ]
+  },
+  {
+   "text": "Y en 2021, un equipo de Londres reconstruyó su cara frontal: un pequeño cosmos con los planetas girando.",
+   "images": [
+    "clips/12.mp4"
+   ],
+   "spoken": "Y en dos mil veintiuno, un equipo de Londres reconstruyó su cara frontal: un pequeño cosmos con los planetas girando."
+  },
+  {
+   "text": "No vino de las estrellas. Lo crearon astrónomos griegos... y luego ese conocimiento se perdió durante siglos.",
+   "images": [
+    "clips/13.mp4",
+    "clips/14.mp4"
+   ]
+  },
+  {
+   "text": "¿Qué más habremos olvidado? Sígueme para más enigmas.",
+   "images": [
+    "../comun/clips/despedida.mp4"
+   ]
+  }
+ ]
+}

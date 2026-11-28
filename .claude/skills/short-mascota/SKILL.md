@@ -56,6 +56,15 @@ donde siempre aparece la mascota, voz en off grave y una sola palabra en pantall
    de zoom al cortar y balanceo suave; la música se agacha sola bajo la voz y suena un
    whoosh en cada corte). Comprueba el alineado (frases ↔ pausas) imprimiendo
    `align_lines` si dudas, y revisa fotogramas antes de entregar.
+6b. **Versión animada ("que la mascota tenga vida")**: anima cada escena con Higgsfield
+   `generate_video_batch`, modelo `grok_video_v15_lite`, `resolution: "720p"`, `duration: 6`,
+   `aspect_ratio: "9:16"`, `medias: [{role: "start_image", value: <job_id de la imagen>}]`
+   (~6 créditos por clip). Prompt: "2D cartoon animation keeping the exact same flat comic
+   art style, colors and character design. <acción concreta de la mascota y del fondo>.
+   Camera static. No text." Descarga los mp4 a `proyectos/<tema>/clips/` y ponlos en
+   `images` del proyecto (el script acepta .mp4: recorta, ralentiza hasta 1.5x y congela el
+   último fotograma si la frase es más larga). Clips compartidos ya animados:
+   `proyectos/comun/clips/giro.mp4` y `despedida.mp4`. Ejemplo: `proyectos/moais/`.
 7. **Publicar** (solo si lo piden): Blotato → `blotato_create_presigned_upload_url`, PUT del
    mp4 (`database.blotato.io` permitido), `blotato_create_post` en la cuenta de YouTube
    "Enigma Plus" con título + #shorts, `containsSyntheticMedia: true`,
