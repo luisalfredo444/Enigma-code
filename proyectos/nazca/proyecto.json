@@ -1,0 +1,123 @@
+{
+ "voice": "voz.mp3",
+ "music": "../../audio/musica-detective.mp3",
+ "music_volume": 0.5,
+ "whoosh": "../../audio/whoosh.mp3",
+ "out": "../../short-nazca.mp4",
+ "keywords": [
+  "cielo",
+  "colibrí",
+  "mono",
+  "araña",
+  "cóndor",
+  "nazca",
+  "aviones",
+  "avión",
+  "llueve",
+  "extraterrestres",
+  "dioses",
+  "giro",
+  "piedras",
+  "1982",
+  "2024",
+  "trescientas",
+  "caminando",
+  "nosotros",
+  "enigmas"
+ ],
+ "lines": [
+  {
+   "text": "En medio del desierto de Perú hay dibujos tan grandes que solo se entienden desde el cielo.",
+   "images": [
+    "sc/01.png"
+   ]
+  },
+  {
+   "text": "Un colibrí de casi cien metros. Un mono con la cola en espiral. Una araña. Un cóndor.",
+   "images": [
+    "sc/02.png",
+    "sc/03.png",
+    "sc/04.png"
+   ]
+  },
+  {
+   "text": "Son las Líneas de Nazca, y tienen unos 2000 años.",
+   "images": [
+    "sc/05.png"
+   ],
+   "spoken": "Son las Líneas de Nazca, y tienen unos dos mil años."
+  },
+  {
+   "text": "Quienes las hicieron no tenían aviones... ni globos... ni torres.",
+   "images": [
+    "sc/06.png"
+   ]
+  },
+  {
+   "text": "Durante siglos casi nadie se fijó en ellas. Recién en el siglo XX, al sobrevolarlas en avión, el mundo vio su verdadera forma.",
+   "images": [
+    "sc/07.png"
+   ],
+   "spoken": "Durante siglos casi nadie se fijó en ellas. Recién en el siglo veinte, al sobrevolarlas en avión, el mundo vio su verdadera forma."
+  },
+  {
+   "text": "Y han sobrevivido porque allí casi no llueve ni sopla el viento.",
+   "images": [
+    "sc/08.png"
+   ]
+  },
+  {
+   "text": "Las teorías se dispararon: pistas de aterrizaje para naves extraterrestres, un calendario gigante de las estrellas, mensajes para los dioses.",
+   "images": [
+    "sc/09.png",
+    "sc/10.png"
+   ]
+  },
+  {
+   "text": "Pero aquí viene el giro.",
+   "images": [
+    "sc/giro.png"
+   ]
+  },
+  {
+   "text": "Las figuras se hicieron retirando las piedras oscuras de la superficie para dejar ver la tierra clara de abajo.",
+   "images": [
+    "sc/12.png"
+   ]
+  },
+  {
+   "text": "En 1982, un investigador reprodujo el cóndor gigante con estacas, cuerdas y un pequeño equipo... sin mirarlo nunca desde el aire.",
+   "images": [
+    "sc/13.png",
+    "sc/17.png"
+   ],
+   "spoken": "En mil novecientos ochenta y dos, un investigador reprodujo el cóndor gigante con estacas, cuerdas y un pequeño equipo... sin mirarlo nunca desde el aire."
+  },
+  {
+   "text": "Y en 2024, científicos japoneses usaron inteligencia artificial y descubrieron más de trescientas figuras nuevas en solo seis meses.",
+   "images": [
+    "sc/14.png",
+    "sc/18.png"
+   ],
+   "spoken": "Y en dos mil veinticuatro, científicos japoneses usaron inteligencia artificial y descubrieron más de trescientas figuras nuevas en solo seis meses."
+  },
+  {
+   "text": "Muchas están junto a antiguos senderos: se hicieron para verlas caminando, no volando.",
+   "images": [
+    "sc/15.png"
+   ]
+  },
+  {
+   "text": "Entonces... ¿para quién eran los dibujos gigantes? ¿Para los dioses... o para nosotros?",
+   "images": [
+    "sc/16.png"
+   ]
+  },
+  {
+   "text": "Sígueme para más enigmas.",
+   "images": [
+    "sc/despedida.png"
+   ]
+  }
+ ]
+}

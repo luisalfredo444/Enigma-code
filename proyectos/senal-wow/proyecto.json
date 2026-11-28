@@ -1,0 +1,129 @@
+{
+ "voice": "voz.mp3",
+ "music": "../../audio/musica-detective.mp3",
+ "music_volume": 0.5,
+ "whoosh": "../../audio/whoosh.mp3",
+ "out": "../../short-senal-wow.mp4",
+ "keywords": [
+  "72",
+  "nunca",
+  "1977",
+  "imposible",
+  "6equj5",
+  "treinta",
+  "wow",
+  "hidrógeno",
+  "extraterrestre",
+  "sagitario",
+  "repitió",
+  "extraterrestres",
+  "giro",
+  "2024",
+  "arecibo",
+  "magnetar",
+  "natural",
+  "rarísimo",
+  "saludando",
+  "enigmas"
+ ],
+ "lines": [
+  {
+   "text": "Durante 72 segundos, la Tierra recibió una señal del espacio... y nunca volvió a sonar.",
+   "images": [
+    "sc/01.png"
+   ],
+   "spoken": "Durante setenta y dos segundos, la Tierra recibió una señal del espacio... y nunca volvió a sonar."
+  },
+  {
+   "text": "15 de agosto de 1977. El radiotelescopio Big Ear, en Ohio, escucha el cielo en busca de vida inteligente.",
+   "images": [
+    "sc/02.png"
+   ],
+   "spoken": "Quince de agosto de mil novecientos setenta y siete. El radiotelescopio Big Ear, en Ohio, escucha el cielo en busca de vida inteligente."
+  },
+  {
+   "text": "Días después, el astrónomo Jerry Ehman revisa las hojas impresas... y encuentra algo imposible.",
+   "images": [
+    "sc/03.png"
+   ]
+  },
+  {
+   "text": "Una secuencia de letras y números: 6EQUJ5.",
+   "images": [
+    "sc/04.png"
+   ],
+   "spoken": "Una secuencia de letras y números: seis, E, Q, U, J, cinco."
+  },
+  {
+   "text": "Una señal unas treinta veces más fuerte que el ruido de fondo.",
+   "images": [
+    "sc/05.png"
+   ]
+  },
+  {
+   "text": "Ehman la rodea con bolígrafo rojo y escribe al margen: Wow!",
+   "images": [
+    "sc/06.png"
+   ],
+   "spoken": "Ehman la rodea con bolígrafo rojo y escribe al margen: Wow."
+  },
+  {
+   "text": "Lo más inquietante: llegó casi exactamente en la frecuencia del hidrógeno, la que los científicos esperaban que usaría una civilización extraterrestre para comunicarse.",
+   "images": [
+    "sc/07.png"
+   ]
+  },
+  {
+   "text": "Venía de la constelación de Sagitario.",
+   "images": [
+    "sc/08.png"
+   ]
+  },
+  {
+   "text": "Desde entonces, la han buscado decenas de veces. Nunca se repitió.",
+   "images": [
+    "sc/09.png"
+   ]
+  },
+  {
+   "text": "Las teorías: extraterrestres, cometas, un satélite secreto, un reflejo de la propia Tierra.",
+   "images": [
+    "sc/10.png",
+    "sc/11.png"
+   ]
+  },
+  {
+   "text": "Pero aquí viene el giro.",
+   "images": [
+    "sc/giro.png"
+   ]
+  },
+  {
+   "text": "En 2024, un equipo de astrónomos encontró en los archivos del radiotelescopio de Arecibo señales parecidas, pero mucho más débiles, que venían de nubes de hidrógeno frío.",
+   "images": [
+    "sc/13.png",
+    "sc/14.png"
+   ],
+   "spoken": "En dos mil veinticuatro, un equipo de astrónomos encontró en los archivos del radiotelescopio de Arecibo señales parecidas, pero mucho más débiles, que venían de nubes de hidrógeno frío."
+  },
+  {
+   "text": "Su hipótesis: una estrella muerta, como un magnetar, lanzó un destello que hizo brillar de golpe una de esas nubes.",
+   "images": [
+    "sc/15.png"
+   ]
+  },
+  {
+   "text": "Un fenómeno natural, rarísimo... que quizá vimos una sola vez.",
+   "images": [
+    "sc/16.png"
+   ]
+  },
+  {
+   "text": "¿Una nube de gas... o alguien saludando? Sígueme para más enigmas.",
+   "images": [
+    "sc/17.png",
+    "sc/despedida.png"
+   ]
+  }
+ ]
+}

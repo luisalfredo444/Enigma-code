@@ -1,0 +1,129 @@
+{
+ "voice": "voz.mp3",
+ "music": "../../audio/musica-detective.mp3",
+ "music_volume": 0.5,
+ "whoosh": "../../audio/whoosh.mp3",
+ "out": "../../short-roanoke.mp4",
+ "keywords": [
+  "cien",
+  "palabra",
+  "1587",
+  "roanoke",
+  "virginia",
+  "provisiones",
+  "españa",
+  "tres",
+  "nadie",
+  "croatoan",
+  "cruz",
+  "tormenta",
+  "sobrenatural",
+  "giro",
+  "isla",
+  "indígena",
+  "hatteras",
+  "espada",
+  "unió",
+  "integración",
+  "enigmas"
+ ],
+ "lines": [
+  {
+   "text": "Más de cien personas desaparecieron sin dejar rastro... y solo dejaron una palabra tallada en un poste.",
+   "images": [
+    "sc/01.png"
+   ]
+  },
+  {
+   "text": "1587. Un grupo de colonos ingleses llega a la isla de Roanoke, en la actual Carolina del Norte.",
+   "images": [
+    "sc/02.png"
+   ],
+   "spoken": "Mil quinientos ochenta y siete. Un grupo de colonos ingleses llega a la isla de Roanoke, en la actual Carolina del Norte."
+  },
+  {
+   "text": "Allí nace Virginia Dare, la primera niña inglesa nacida en América.",
+   "images": [
+    "sc/03.png"
+   ]
+  },
+  {
+   "text": "Su abuelo, el gobernador John White, viaja a Inglaterra en busca de provisiones.",
+   "images": [
+    "sc/04.png"
+   ]
+  },
+  {
+   "text": "Pero estalla la guerra con España... y tarda tres años en volver.",
+   "images": [
+    "sc/05.png"
+   ]
+  },
+  {
+   "text": "Cuando por fin regresa, en 1590, no hay nadie. Las casas, desmontadas. Ni un solo cuerpo.",
+   "images": [
+    "sc/06.png"
+   ],
+   "spoken": "Cuando por fin regresa, en mil quinientos noventa, no hay nadie. Las casas, desmontadas. Ni un solo cuerpo."
+  },
+  {
+   "text": "Solo una palabra grabada en un poste: CROATOAN.",
+   "images": [
+    "sc/07.png"
+   ],
+   "spoken": "Solo una palabra grabada en un poste: Croatoan."
+  },
+  {
+   "text": "Habían acordado tallar una cruz si se marchaban en peligro. No había ninguna cruz.",
+   "images": [
+    "sc/08.png"
+   ]
+  },
+  {
+   "text": "Una tormenta le impidió seguir buscando. White nunca volvió a ver a su familia.",
+   "images": [
+    "sc/09.png"
+   ]
+  },
+  {
+   "text": "Las teorías: una masacre, una epidemia, los españoles, un naufragio... o algo sobrenatural.",
+   "images": [
+    "sc/10.png",
+    "sc/11.png"
+   ]
+  },
+  {
+   "text": "Pero aquí viene el giro.",
+   "images": [
+    "sc/giro.png"
+   ]
+  },
+  {
+   "text": "Croatoan era el nombre de una isla cercana... y de un pueblo indígena amigo de los colonos.",
+   "images": [
+    "sc/13.png",
+    "sc/14.png"
+   ]
+  },
+  {
+   "text": "En esa isla, hoy llamada Hatteras, los arqueólogos han hallado objetos ingleses de la época mezclados con los de una aldea indígena: la empuñadura de una espada, piezas de armas, una pizarra para escribir.",
+   "images": [
+    "sc/15.png",
+    "sc/18.png"
+   ]
+  },
+  {
+   "text": "Quizá la colonia no desapareció... sino que se unió a sus vecinos.",
+   "images": [
+    "sc/16.png"
+   ]
+  },
+  {
+   "text": "¿Integración... o algo más? Sígueme para más enigmas.",
+   "images": [
+    "sc/17.png",
+    "sc/despedida.png"
+   ]
+  }
+ ]
+}
